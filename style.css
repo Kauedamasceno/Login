@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+  color: hsl(187, 24%, 22%);
+}
+
+html {
+  height: 100%;
+  background-color: red;
+}
+
+body {
+  background-color:  hsl(148, 38%, 91%);
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin: 0 auto;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+ 
+}
+
+.form {
+  background-color: hsl(0, 0%, 100%);
+  width: 1440px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+
+}
+
+.form input {
+  height: 50px;
+  border-radius: 8px;
+  border-color: hsl(169, 82%, 27%);
+  font-size: 16px;
+  box-shadow: none;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.name {
+  margin-bottom: 30px;
+  display: flex;
+  gap: 30px;
+}
+
+.name span {
+  margin-bottom: 15px;
+}
+
+#first_name{
+  display: flex;
+  flex-direction: column;
+  width: 685px;
+  
+}
+
+#last_name {
+  display: flex;
+  flex-direction: column;
+  width: 685px;
+}
+
+#email {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+#email span {
+  margin-bottom: 15px;
+}
+
+.query_types {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+
+}
+
+.query_types span{
+  margin-bottom: 15px;
+}
+
+.query_opts {
+  display: flex;
+  gap: 30px;
+}
+
+.query_opts span {
+  margin-bottom: 0;
+  padding-left: 50px;
+}
+
+
+.suport_request {
+  border:2px solid black;
+  width: 685px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+   padding-left: 50px;
+}
+
+
+.general_enquiry {
+  border:2px solid black;
+  width: 685px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+   padding-left: 50px;
+ 
+}
+
+.textarea {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid red;
+  width: 100%;
+}
+
+.textarea span {
+  margin-bottom: 15px;
+}
+
+.textarea textarea {
+  width: 100%;
+  height: 100px;
+  border-radius: 8px;
+}
+
+.consent {
+  display: flex;
+
+  align-items: center;
+}
+
+.submit {
+  height: 100px;
+  background-color: hsl(169, 82%, 27%);
+}
+
+input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+ /*-webkit-appearance: none;**/ 
+  /* Remove most all native input styles */
+  appearance: none;
+  /* Not removed via appearance */
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+}
+
+input[type="checkbox"]:checked::before {
+  /*transform: scale(1);*/
+}
+
+
+
