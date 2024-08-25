@@ -20,6 +20,7 @@ body {
   align-items: center; 
   margin: 0 auto;
   height: 100%;
+
 }
 
 .container {
@@ -34,6 +35,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 50px;
+  cursor: pointer;
 
 }
 
@@ -43,6 +45,7 @@ body {
   border-color: hsl(169, 82%, 27%);
   font-size: 16px;
   box-shadow: none;
+  cursor: pointer;
 }
 
 h1 {
@@ -157,7 +160,7 @@ h1 {
   background-color: hsl(169, 82%, 27%);
 }
 
-input[type="checkbox"] {
+.query_opts input[type="checkbox"] {
   /* Add if not using autoprefixer */
  /*-webkit-appearance: none;**/ 
   /* Remove most all native input styles */
@@ -166,28 +169,26 @@ input[type="checkbox"] {
   width: 1.15em;
   height: 1.15em;
   border: 0.15em solid currentColor;
-  border-radius: 0.15em;
-  transform: translateY(-0.075em);
+  
   border-radius: 50%;
-  display: grid;
-  place-content: center;
+  
 }
 
-input[type="checkbox"]::before {
-  content: "";
-  width: 0.65em;
-  height: 0.65em;
-  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
-  transform: scale(0);
-  transform-origin: bottom left;
-  transition: 120ms transform ease-in-out;
-  box-shadow: inset 1em 1em var(--form-control-color);
-  /* Windows High Contrast Mode */
-  background-color: CanvasText;
+.query_opts input[type="checkbox"]:checked {
+  background-color: red;
+  
+  outline: 2px solid green;
+  outline-offset: 2px;
+  border: none;
 }
 
-input[type="checkbox"]:checked::before {
-  /*transform: scale(1);*/
+.consent input[type="checkbox"]:checked {
+  accent-color: green;
+}
+
+.submit {
+  color: white;
+  font-size: 16px;
 }
 
 
