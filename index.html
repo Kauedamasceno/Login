@@ -19,19 +19,22 @@
 
       <!--Name-->
         <div class="name">
-          <label for="" id="first_name">
+          <label for="" class="first_name">
             <span>First name</span> 
-            <input type="text">
+            <input type="text" id="first_name">
+            <span id="error_first_name" class="error"></span>
           </label>
-          <label id="last_name">
+          <label class="last_name">
             <span>Last name</span>
-            <input type="text">
+            <input type="text" id="last_name">
+            <span id="error_last_name" class="error"></span>
           </label>
         </div>
         <!--Email-->
-        <label id="email">
+        <label class="email">
          <span>email</span>
-         <input type="email">
+         <input type="email" id="email">
+         <span id="error_email" class="error"></span>
         </label>
 
         <!--Query-->
@@ -57,13 +60,16 @@
 
         <label class="textarea">
          <span>Message</span>
-          <textarea name="" id=""></textarea>
+          <textarea name="" id="textarea"></textarea>
+          <span id="error_textarea" class="error"></span>
         </label>
 
         <div class="consent">
-          <input type="checkbox">
+          <input type="checkbox" id="consent">
           <span>I consent to being contacted by the team</span>
+          
         </div>
+        <span id="error_consent" class="error"></span>
         
       </div>
 
@@ -71,6 +77,7 @@
     </form>
   
    
-
   </body>
+
+<script src="index.js"></script>
 </html>

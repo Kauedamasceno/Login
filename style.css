@@ -75,13 +75,13 @@ h1 {
   margin-bottom: 15px;
 }
 
-#first_name{
+.first_name{
   width: 685px;
   display: flex;
   flex-direction: column;  
 }
 
-#last_name {
+.last_name {
   width: 685px;
   display: flex;
   flex-direction: column;
@@ -89,7 +89,7 @@ h1 {
 
 /* input email*/
 
-#email {
+.email {
   width: 100%;
   margin-bottom: 15px;
   display: flex;
@@ -196,6 +196,11 @@ h1 {
 .consent {
   display: flex;
   align-items: center;
+  margin-left: 5px;
+}
+
+.consent input[type="checkbox"] {
+  height: 40px;
 }
 
 
@@ -219,4 +224,14 @@ h1 {
 }
 
 
+/* error */
+
+.error {
+  color:hsl(0, 66%, 54%) ;
+}
+
+#error_consent {
+  display: block;
+  margin-bottom: 30px;
+}
 
