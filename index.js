@@ -1,9 +1,9 @@
 // const
-const firstName = document.querySelector('#first_name')
-const lastName = document.querySelector('#last_name')
-const email = document.querySelector("#email")
+const firstName = document.querySelector('.first_name')
+const lastName = document.querySelector('.last_name')
+const email = document.querySelector(".email")
 const queries = document.querySelectorAll(".queries_choose")
-const textarea = document.querySelector("#textarea")
+const textarea = document.querySelector(".textarea")
 const consent = document.querySelector("#consent")
 
 // const error
@@ -34,39 +34,45 @@ const validation = () => {
   if (firstName.value == ''){
   errorFirstName.textContent = 'this field is required'
   isValid = false
-  firstName.style.border = "1px solid hsl(0, 66%, 54%)"
+  firstName.classList.remove('first_name')
+  firstName.classList.add("error_input")
   }else {
-    firstName.style.border =  '1px solid hsl(186, 15%, 59%)';
+    firstName.classList.remove("error_input")
+    firstName.classList.add("first_name")
   }
   
   if (lastName.value == '') {
     errorLastName.textContent = 'this field is required'
     isValid = false
-    lastName.style.border = "1px solid hsl(0, 66%, 54%)"
+    lastName.classList.remove("last_name")
+    lastName.classList.add("error_input")
   } else {
-    lastName.style.border =  '1px solid hsl(186, 15%, 59%)'
+    lastName.classList.remove("error_input")
+    lastName.classList.add("last_name")
   }
 
   if (email.value == '' || !email.value.includes('@')) {
     errorEmail.textContent = 'Please enter a valid email addres'
     isValid = false
-    email.style.border = "1px solid hsl(0, 66%, 54%)"
+    email.classList.remove('email')
+    email.classList.add("error_input")
   } else {
-    email.style.border =  '1px solid hsl(186, 15%, 59%)'
+    email.classList.remove("error_input")
+    email.classList.add("email")
   }
 
   if (!queryGeneralEnquiry.checked && !querySuportRequest.checked) {
     errorQueries.textContent = 'error'
-    firstName.classList.add('error_input')
   }
 
   if (textarea.value == '') {
     errorTextarea.textContent = 'This field is required'
     isValid = false
-    firstName.classList.add('error_input')
-    textarea.style.border = "1px solid hsl(0, 66%, 54%)"
+    textarea.classList.remove("textarea")
+    textarea.classList.add("error_textarea")
   } else {
-    textarea.style.border =  '1px solid hsl(186, 15%, 59%)'
+    textarea.classList.remove("error_textarea")
+    textarea.classList.add("textarea")
   }
 
   if (!consent.checked) {

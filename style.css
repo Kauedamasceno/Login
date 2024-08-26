@@ -41,22 +41,6 @@ body {
 
 }
 
-.form input {
-  height: 50px;
-  padding: 4px;
-  border: 1px solid hsl(186, 15%, 59%);
-  border-radius: 8px;
-  outline: none;
-  box-shadow: none;
-  font-size: 16px;  
-  cursor: pointer;
-
-}
-
-.form input:focus {
-  outline: 1px solid hsl(169, 82%, 27%);
-}
-
 h1 {
   margin-bottom: 30px;
   font-size: 50px;
@@ -75,28 +59,70 @@ h1 {
   margin-bottom: 15px;
 }
 
-.first_name{
+.first_name_parent{
   width: 685px;
   display: flex;
   flex-direction: column;  
 }
 
-.last_name {
+.first_name {
+  height: 50px;
+  padding: 4px;
+  border: 1px solid hsl(186, 15%, 59%);
+  border-radius: 8px;
+  outline: none;
+  box-shadow: none;
+  font-size: 16px;  
+  cursor: pointer;
+}
+
+.first_name:focus {
+  outline: 1px solid hsl(169, 82%, 27%);
+}
+
+.last_name_parent {
   width: 685px;
   display: flex;
   flex-direction: column;
 }
 
+.last_name {
+  height: 50px;
+  padding: 4px;
+  border: 1px solid hsl(186, 15%, 59%);
+  border-radius: 8px;
+  outline: none;
+  box-shadow: none;
+  font-size: 16px;  
+  cursor: pointer;
+}
+.last_name:focus {
+  outline: 1px solid hsl(169, 82%, 27%);
+}
 /* input email*/
 
-.email {
+.email_parent {
   width: 100%;
   margin-bottom: 15px;
   display: flex;
   flex-direction: column;
 }
 
-#email span {
+.email {
+  height: 50px;
+  padding: 4px;
+  border: 1px solid hsl(186, 15%, 59%);
+  border-radius: 8px;
+  outline: none;
+  box-shadow: none;
+  font-size: 16px;  
+  cursor: pointer;
+}
+.email:focus {
+  outline: 1px solid hsl(169, 82%, 27%);
+}
+
+#emailId span {
   margin-bottom: 15px;
 }
 
@@ -186,26 +212,27 @@ h1 {
 
 /* textarea*/
 
-.textarea {
+.textarea_parent {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.textarea span {
+.textarea_parent span {
   margin-bottom: 15px;
 }
 
-.textarea textarea {
+.textarea {
   height: 100px;
   width: 100%;
   padding: 4px;
   border-radius: 8px;
   border: 1px solid hsl(186, 15%, 59%);
   font-size: 16px;
+  outline: none;
 }
 
-.textarea textarea:focus {
+.textarea:focus {
   outline: 1px solid hsl(169, 82%, 27%);
 }
 
@@ -257,18 +284,38 @@ h1 {
 }
 
 .error_input {
+  height: 50px;
+  padding: 4px;
+  border-radius: 8px;
+  outline: none;
+  box-shadow: none;
+  font-size: 16px;  
+  cursor: pointer;
   border: none;
-  border: 1px solid hsl(0, 66%, 54%);
-
+  outline: 1px solid hsl(0, 66%, 54%);
 }
 
 .error_input:hover {
   background: none;
   border: none;
-  border: 1px solid hsl(0, 66%, 54%);
+  outline: 1px solid hsl(0, 66%, 54%);
 }
 
 .error_input:focus {
-  outline: none;
+  outline: 2px solid hsl(0, 66%, 54%);
+}
+
+.error_textarea{
+  height: 100px;
+  width: 100%;
+  padding: 4px;
+  border-radius: 8px;
+  border: none;
+  outline: 1px solid hsl(0, 66%, 54%);
+  font-size: 16px;
+}
+
+.error_textarea:focus {
+  outline: 2px solid hsl(0, 66%, 54%);
   border: none;
 }
