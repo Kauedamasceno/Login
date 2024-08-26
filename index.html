@@ -43,13 +43,19 @@
             <span>query types</span>
 
            <div class="query_opts">
-            <label class="general_enquiry">
-             <input type="checkbox" name="" class="checkbox_rounded" >
-             <span>General Enquiry</span>
-            </label>
+            <div class="general_enquiry" >
+    
+              <label for="query_general" class="queries_css">
+                <input type="radio" id="query_general" name="queries" class="queries_choose">
+                <span>General Enquiry</span></label>
+             
+            </div>
             
-            <label class="suport_request">
-              <input type="checkbox" name="" class="checkbox_rounded" >
+            <div class="suport_request">
+
+           
+            <label class="queries_css">
+              <input type="radio" name="queries" class="queries_choose">
               <span>Suport Request</span>
             </label>
            </div>
@@ -58,20 +64,22 @@
           </div>
         </div>
 
-        <label class="textarea">
-         <span>Message</span>
-          <textarea name="" id="textarea"></textarea>
-          <span id="error_textarea" class="error"></span>
-        </label>
+        <!--Textarea-->
 
-        <div class="consent">
-          <input type="checkbox" id="consent">
-          <span>I consent to being contacted by the team</span>
-          
-        </div>
-        <span id="error_consent" class="error"></span>
-        
-      </div>
+        <label class="textarea">
+          <span>Message</span>
+           <textarea name="" id="textarea"></textarea>
+           <span id="error_textarea" class="error"></span>
+         </label>
+ 
+         <div class="consent">
+           <input type="checkbox" id="consent">
+           <span>I consent to being contacted by the team</span>
+           
+         </div>
+         <span id="error_consent" class="error"></span>
+         
+       </div>
 
     <button type="submit" class="submit">Submit</button>
     </form>

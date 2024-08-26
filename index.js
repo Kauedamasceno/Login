@@ -2,8 +2,11 @@
 const firstName = document.querySelector('#first_name')
 const lastName = document.querySelector('#last_name')
 const email = document.querySelector("#email")
+
 const textarea = document.querySelector("#textarea")
 const consent = document.querySelector("#consent")
+
+// const error
 const errorFirstName = document.querySelector('#error_first_name')
 const errorLastName = document.querySelector('#error_last_name')
 const errorEmail = document.querySelector("#error_email")
