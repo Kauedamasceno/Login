@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
 
 /* css global */
 
@@ -11,8 +10,6 @@
   color: hsl(187, 24%, 22%);
 }
 
-
-
 body {
   display: flex;
   align-items: center;
@@ -21,20 +18,53 @@ body {
   height: 100vh;
 }
 
+.invisible {
+  display: none;
+}
 
+.popup {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 2;
+  left: 750px;
+  top: 50px;
+  background-color: hsl(187, 24%, 22%);
+  color: white;
+  padding: 30px;
+  border-radius: 8px;
+}
 
+.popup h2,
+.popup path,
+.popup p {
+  color: white;
+}
+
+.popup svg,
+.popup path {
+  width: 30px;
+  height: 28px;
+}
+
+.popup h2 {
+  display: inline;
+  margin-left: 10px;
+}
+
+.svg_container {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
 
 /*form */
 .form {
-  
   width: 70%;
   padding: 50px;
 
-  
-  
   background-color: hsl(0, 0%, 100%);
   cursor: pointer;
-
 }
 
 h1 {
@@ -55,10 +85,10 @@ h1 {
   margin-bottom: 15px;
 }
 
-.first_name_parent{
+.first_name_parent {
   width: 90%;
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
 }
 
 .first_name {
@@ -68,7 +98,7 @@ h1 {
   border-radius: 8px;
   outline: none;
   box-shadow: none;
-  font-size: 16px;  
+  font-size: 16px;
   cursor: pointer;
 }
 
@@ -89,7 +119,7 @@ h1 {
   border-radius: 8px;
   outline: none;
   box-shadow: none;
-  font-size: 16px;  
+  font-size: 16px;
   cursor: pointer;
 }
 .last_name:focus {
@@ -111,7 +141,7 @@ h1 {
   border-radius: 8px;
   outline: none;
   box-shadow: none;
-  font-size: 16px;  
+  font-size: 16px;
   cursor: pointer;
 }
 .email:focus {
@@ -122,22 +152,20 @@ h1 {
   margin-bottom: 15px;
 }
 
-
 /* query input */
 .query_types {
   margin-bottom: 15px;
   display: flex;
   flex-direction: column;
-  }
+}
 
-
-.query_types span{
+.query_types span {
   margin-bottom: 15px;
 }
 
 .query_opts {
   display: flex;
-  gap:3.25%;
+  gap: 3.25%;
 }
 
 .query_opts span {
@@ -145,31 +173,27 @@ h1 {
   padding-left: 50px;
 }
 
-
 .suport_request {
-   height: 50px;
-   width: 90%;
-   display: flex;
-   align-items: center;
-   border:1px solid hsl(186, 15%, 59%);
-   border-radius: 8px;
-
+  height: 50px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  border: 1px solid hsl(186, 15%, 59%);
+  border-radius: 8px;
 }
-
 
 .general_enquiry {
   width: 90%;
   height: 50px;
   display: flex;
   align-items: center;
-  border:1px solid hsl(186, 15%, 59%);
+  border: 1px solid hsl(186, 15%, 59%);
   border-radius: 8px;
-
 }
 
 .query_opts input[type="radio"] {
   /* Add if not using autoprefixer */
- /*-webkit-appearance: none;**/ 
+  /*-webkit-appearance: none;**/
   /* Remove most all native input styles */
   /* Not removed via appearance */
   appearance: none;
@@ -177,7 +201,6 @@ h1 {
   width: 1.15em;
   border: 0.15em solid currentColor;
   border-radius: 50%;
-  
 }
 
 .queries_css {
@@ -187,16 +210,13 @@ h1 {
   height: 100%;
   width: 100%;
   border-radius: 8px;
-
 }
 
 .queries_css:has(input[type="radio"]:checked) {
-
   padding-left: 50px;
   width: 100%;
-  background-color: hsl(147, 28%, 64%)
-;
-} 
+  background-color: hsl(147, 28%, 64%);
+}
 
 .query_opts input[type="radio"]:checked {
   border: none;
@@ -244,7 +264,6 @@ h1 {
   border: none;
 }
 
-
 .consent input[type="checkbox"]:checked {
   accent-color: hsl(169, 82%, 27%);
   outline: none;
@@ -263,14 +282,13 @@ h1 {
   border: none;
   border-radius: 8px;
   font-size: 16px;
-  color:  hsl(148, 38%, 91%);
+  color: hsl(148, 38%, 91%);
 }
-
 
 /* error */
 
 .error {
-  color:hsl(0, 66%, 54%) ;
+  color: hsl(0, 66%, 54%);
 }
 
 #error_consent {
@@ -284,7 +302,7 @@ h1 {
   border-radius: 8px;
   outline: none;
   box-shadow: none;
-  font-size: 16px;  
+  font-size: 16px;
   cursor: pointer;
   border: none;
   outline: 1px solid hsl(0, 66%, 54%);
@@ -300,7 +318,7 @@ h1 {
   outline: 2px solid hsl(0, 66%, 54%);
 }
 
-.error_textarea{
+.error_textarea {
   height: 100px;
   width: 100%;
   padding: 4px;
@@ -316,7 +334,6 @@ h1 {
 }
 
 @media (max-width: 764px) {
-
   body {
     height: auto;
   }
@@ -325,10 +342,10 @@ h1 {
     width: 100%;
   }
 
-  .name{
+  .name {
     flex-direction: column;
   }
-  
+
   .query_opts {
     flex-direction: column;
   }
@@ -349,5 +366,4 @@ h1 {
   .last_name_parent {
     width: 100%;
   }
-
 }

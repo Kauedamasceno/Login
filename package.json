@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "install": "0.13.0",
+    "prettier": "3.3.3"
+  },
+  "dependencies": {
+    "bootstrap-icons": "^1.11.3"
+  }
+}
