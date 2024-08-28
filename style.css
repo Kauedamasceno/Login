@@ -27,7 +27,7 @@ body {
   flex-direction: column;
   position: absolute;
   z-index: 2;
-  left: 750px;
+  left: auto;
   top: 50px;
   background-color: hsl(187, 24%, 22%);
   color: white;
@@ -336,6 +336,10 @@ h1 {
 @media (max-width: 764px) {
   body {
     height: auto;
+  }
+
+  .popup {
+    left: auto;
   }
 
   .form {
