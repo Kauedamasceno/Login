@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+/* css global */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Karla", sans-serif;
+    color: hsl(187, 24%, 22%);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(148, 38%, 91%);
+    height: 100vh;
+}
+
+.invisible {
+    display: none;
+}
+
+.popup {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 2;
+    left: auto;
+    top: 50px;
+    background-color: hsl(187, 24%, 22%);
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.popup h2,
+.popup path,
+.popup p {
+    color: white;
+}
+
+.popup svg,
+.popup path {
+    width: 30px;
+    height: 28px;
+}
+
+.popup h2 {
+    display: inline;
+    margin-left: 10px;
+}
+
+.svg_container {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/*form */
+.form {
+    width: 70%;
+    padding: 50px;
+
+    background-color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+/* input names */
+
+.name {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 3%;
+}
+
+.name span {
+    margin-bottom: 15px;
+}
+
+.first_name_parent {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.first_name {
+    height: 50px;
+    padding: 4px;
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 8px;
+    outline: none;
+    box-shadow: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.first_name:focus {
+    outline: 1px solid hsl(169, 82%, 27%);
+}
+
+.last_name_parent {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.last_name {
+    height: 50px;
+    padding: 4px;
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 8px;
+    outline: none;
+    box-shadow: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+.last_name:focus {
+    outline: 1px solid hsl(169, 82%, 27%);
+}
+/* input email*/
+
+.email_parent {
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.email {
+    height: 50px;
+    padding: 4px;
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 8px;
+    outline: none;
+    box-shadow: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+.email:focus {
+    outline: 1px solid hsl(169, 82%, 27%);
+}
+
+#emailId span {
+    margin-bottom: 15px;
+}
+
+/* query input */
+.query_types {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.query_types span {
+    margin-bottom: 15px;
+}
+
+.query_opts {
+    display: flex;
+    gap: 3.25%;
+}
+
+.query_opts span {
+    margin-bottom: 0;
+    padding-left: 50px;
+}
+
+.suport_request {
+    height: 50px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 8px;
+}
+
+.general_enquiry {
+    width: 90%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 8px;
+}
+
+.query_opts input[type="radio"] {
+    /* Add if not using autoprefixer */
+    /*-webkit-appearance: none;**/
+    /* Remove most all native input styles */
+    /* Not removed via appearance */
+    appearance: none;
+    height: 1.15em;
+    width: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 50%;
+}
+
+.queries_css {
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.queries_css:has(input[type="radio"]:checked) {
+    padding-left: 50px;
+    width: 100%;
+    background-color: hsl(147, 28%, 64%);
+}
+
+.query_opts input[type="radio"]:checked {
+    border: none;
+    outline: 2px solid green;
+    outline-offset: 2px;
+    background-color: hsl(169, 82%, 27%);
+}
+
+/* textarea*/
+
+.textarea_parent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.textarea_parent span {
+    margin-bottom: 15px;
+}
+
+.textarea {
+    height: 100px;
+    width: 100%;
+    padding: 4px;
+    border-radius: 8px;
+    border: 1px solid hsl(186, 15%, 59%);
+    font-size: 16px;
+    outline: none;
+}
+
+.textarea:focus {
+    outline: 1px solid hsl(169, 82%, 27%);
+}
+
+/* box of consent*/
+.consent {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.consent input[type="checkbox"] {
+    height: 40px;
+    margin-right: 10px;
+    border: none;
+}
+
+.consent input[type="checkbox"]:checked {
+    accent-color: hsl(169, 82%, 27%);
+    outline: none;
+    border: none;
+}
+
+/*submit*/
+
+.submit {
+    height: 100px;
+    background-color: hsl(169, 82%, 27%);
+    width: 100%;
+}
+
+.submit {
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: hsl(148, 38%, 91%);
+}
+
+/* error */
+
+.error {
+    color: hsl(0, 66%, 54%);
+}
+
+#error_consent {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.error_input {
+    height: 50px;
+    padding: 4px;
+    border-radius: 8px;
+    outline: none;
+    box-shadow: none;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    outline: 1px solid hsl(0, 66%, 54%);
+}
+
+.error_input:hover {
+    background: none;
+    border: none;
+    outline: 1px solid hsl(0, 66%, 54%);
+}
+
+.error_input:focus {
+    outline: 2px solid hsl(0, 66%, 54%);
+}
+
+.error_textarea {
+    height: 100px;
+    width: 100%;
+    padding: 4px;
+    border-radius: 8px;
+    border: none;
+    outline: 1px solid hsl(0, 66%, 54%);
+    font-size: 16px;
+}
+
+.error_textarea:focus {
+    outline: 2px solid hsl(0, 66%, 54%);
+    border: none;
+}
+
+@media (max-width: 764px) {
+    body {
+        height: auto;
+    }
+
+    .popup {
+        left: auto;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .name {
+        flex-direction: column;
+    }
+
+    .query_opts {
+        flex-direction: column;
+    }
+
+    .general_enquiry {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .suport_request {
+        width: 100%;
+    }
+
+    .first_name_parent {
+        width: 100%;
+    }
+
+    .last_name_parent {
+        width: 100%;
+    }
+}

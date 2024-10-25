@@ -1,115 +1,119 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Contact form</title>
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/images/favicon-32x32.png"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>Contact form</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  </head>
-  <body>
-    <div class="invisible" id="popup">
-      <div class="svg_container">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          fill="currentColor"
-          class="bi bi-check-circle"
-          viewBox="0 0 16 16"
-        >
-          <path
-            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
-          />
-          <path
-            d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"
-          />
-        </svg>
-        <h2>Message Sent</h2>
-      </div>
-      <p>Thanks for completing the form. We'll be in touch soon!</p>
-    </div>
-
-    <form class="form">
-      <!-- form -->
-      <h1>Contact us</h1>
-
-      <!--Name-->
-      <div class="name">
-        <label for="" class="first_name_parent">
-          <span>First name</span>
-          <input type="text" class="first_name" />
-          <span id="error_first_name" class="error"></span>
-        </label>
-        <label class="last_name_parent">
-          <span>Last name</span>
-          <input type="text" class="last_name" />
-          <span id="error_last_name" class="error"></span>
-        </label>
-      </div>
-      <!--Email-->
-      <label class="email_parent">
-        <span>email</span>
-
-        <input type="email" id="emailId" class="email" />
-        <span id="error_email" class="error"></span>
-      </label>
-
-      <!--Query-->
-      <div id="query">
-        <div class="query_types">
-          <span>query types</span>
-
-          <div class="query_opts">
-            <div class="general_enquiry">
-              <label for="query_general" class="queries_css">
-                <input
-                  type="radio"
-                  id="query_general"
-                  name="queries"
-                  class="queries_choose"
-                />
-                <span>General Enquiry</span></label
-              >
+        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    </head>
+    <body>
+        <div class="invisible" id="popup">
+            <div class="svg_container">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-check-circle"
+                    viewBox="0 0 16 16"
+                >
+                    <path
+                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                    />
+                    <path
+                        d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"
+                    />
+                </svg>
+                <h2>Message Sent</h2>
             </div>
-
-            <div class="suport_request">
-              <label class="queries_css">
-                <input type="radio" name="queries" class="queries_choose" />
-                <span>Suport Request</span>
-              </label>
-            </div>
-          </div>
-          <span id="error_queries" class="error"></span>
+            <p>Thanks for completing the form. We'll be in touch soon!</p>
         </div>
 
-        <!--Textarea-->
+        <form class="form">
+            <!-- form -->
+            <h1>Contact us</h1>
 
-        <label class="textarea_parent">
-          <span>Message</span>
-          <textarea name="" class="textarea"></textarea>
-          <span id="error_textarea" class="error"></span>
-        </label>
+            <!--Name-->
+            <div class="name">
+                <label for="" class="first_name_parent">
+                    <span>First name</span>
+                    <input type="text" class="first_name" />
+                    <span id="error_first_name" class="error"></span>
+                </label>
+                <label class="last_name_parent">
+                    <span>Last name</span>
+                    <input type="text" class="last_name" />
+                    <span id="error_last_name" class="error"></span>
+                </label>
+            </div>
+            <!--Email-->
+            <label class="email_parent">
+                <span>email</span>
 
-        <div class="consent">
-          <input type="checkbox" id="consent" />
-          <span>I consent to being contacted by the team</span>
-        </div>
-        <span id="error_consent" class="error"></span>
-      </div>
+                <input type="email" id="emailId" class="email" />
+                <span id="error_email" class="error"></span>
+            </label>
 
-      <button type="submit" class="submit">Submit</button>
-    </form>
-  </body>
+            <!--Query-->
+            <div id="query">
+                <div class="query_types">
+                    <span>query types</span>
 
-  <script src="index.js"></script>
+                    <div class="query_opts">
+                        <div class="general_enquiry">
+                            <label for="query_general" class="queries_css">
+                                <input
+                                    type="radio"
+                                    id="query_general"
+                                    name="queries"
+                                    class="queries_choose"
+                                />
+                                <span>General Enquiry</span></label
+                            >
+                        </div>
+
+                        <div class="suport_request">
+                            <label class="queries_css">
+                                <input
+                                    type="radio"
+                                    name="queries"
+                                    class="queries_choose"
+                                />
+                                <span>Suport Request</span>
+                            </label>
+                        </div>
+                    </div>
+                    <span id="error_queries" class="error"></span>
+                </div>
+
+                <!--Textarea-->
+
+                <label class="textarea_parent">
+                    <span>Message</span>
+                    <textarea name="" class="textarea"></textarea>
+                    <span id="error_textarea" class="error"></span>
+                </label>
+
+                <div class="consent">
+                    <input type="checkbox" id="consent" />
+                    <span>I consent to being contacted by the team</span>
+                </div>
+                <span id="error_consent" class="error"></span>
+            </div>
+
+            <button type="submit" class="submit">Submit</button>
+        </form>
+    </body>
+
+    <script src="index.js"></script>
 </html>
