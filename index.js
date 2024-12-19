@@ -33,7 +33,7 @@ const validation = () => {
     let isValid = true
 
     if (firstName.value == "") {
-        errorFirstName.textContent = "this field is required"
+        errorFirstName.textContent = "Este campo é obrigatorio"
         isValid = false
         firstName.classList.remove("first_name")
         firstName.classList.add("error_input")
@@ -43,7 +43,7 @@ const validation = () => {
     }
 
     if (lastName.value == "") {
-        errorLastName.textContent = "this field is required"
+        errorLastName.textContent = "Este campo é obrigatorio"
         isValid = false
         lastName.classList.remove("last_name")
         lastName.classList.add("error_input")
@@ -53,7 +53,7 @@ const validation = () => {
     }
 
     if (email.value == "" || !email.value.includes("@")) {
-        errorEmail.textContent = "Please enter a valid email addres"
+        errorEmail.textContent = "Obrigatorio inserir o email"
         isValid = false
         email.classList.remove("email")
         email.classList.add("error_input")
@@ -63,11 +63,11 @@ const validation = () => {
     }
 
     if (!queryGeneralEnquiry.checked && !querySuportRequest.checked) {
-        errorQueries.textContent = "Please select a query type"
+        errorQueries.textContent = "Escolha qual tipo de suporte"
     }
 
     if (textarea.value == "") {
-        errorTextarea.textContent = "This field is required"
+        errorTextarea.textContent = "Este campo é obrigatorio"
         isValid = false
         textarea.classList.remove("textarea")
         textarea.classList.add("error_textarea")
@@ -78,7 +78,7 @@ const validation = () => {
 
     if (!consent.checked) {
         errorConsent.textContent =
-            "To submit this form, please content to being contacted"
+            "Para enviar o formulário, confirme que você aceita o consentimento"
         isValid = false
     }
 

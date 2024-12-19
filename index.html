@@ -11,8 +11,8 @@
             sizes="32x32"
             href="./assets/images/favicon-32x32.png"
         />
-        <link rel="stylesheet" href="style.css" />
-        <title>Contact form</title>
+        <link rel="stylesheet" href="/styles/style.css" />
+        <title>Formulário de contato</title>
 
         <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     </head>
@@ -34,24 +34,27 @@
                         d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"
                     />
                 </svg>
-                <h2>Message Sent</h2>
+                <h2>Mensagem enviada</h2>
             </div>
-            <p>Thanks for completing the form. We'll be in touch soon!</p>
+            <p>
+                Obrigado por completar o Formulário. Nos entraremos em contato
+                em breve!
+            </p>
         </div>
 
         <form class="form">
             <!-- form -->
-            <h1>Contact us</h1>
+            <h1>Fale com a gente</h1>
 
             <!--Name-->
             <div class="name">
                 <label for="" class="first_name_parent">
-                    <span>First name</span>
+                    <span>Nome</span>
                     <input type="text" class="first_name" />
                     <span id="error_first_name" class="error"></span>
                 </label>
                 <label class="last_name_parent">
-                    <span>Last name</span>
+                    <span>Sobrenome</span>
                     <input type="text" class="last_name" />
                     <span id="error_last_name" class="error"></span>
                 </label>
@@ -67,7 +70,7 @@
             <!--Query-->
             <div id="query">
                 <div class="query_types">
-                    <span>query types</span>
+                    <span>Tipo de requisição</span>
 
                     <div class="query_opts">
                         <div class="general_enquiry">
@@ -78,7 +81,7 @@
                                     name="queries"
                                     class="queries_choose"
                                 />
-                                <span>General Enquiry</span></label
+                                <span>Consulta geral</span></label
                             >
                         </div>
 
@@ -89,7 +92,7 @@
                                     name="queries"
                                     class="queries_choose"
                                 />
-                                <span>Suport Request</span>
+                                <span>Consulta de suporte</span>
                             </label>
                         </div>
                     </div>
@@ -99,19 +102,22 @@
                 <!--Textarea-->
 
                 <label class="textarea_parent">
-                    <span>Message</span>
+                    <span>Mensagem</span>
                     <textarea name="" class="textarea"></textarea>
                     <span id="error_textarea" class="error"></span>
                 </label>
 
                 <div class="consent">
                     <input type="checkbox" id="consent" />
-                    <span>I consent to being contacted by the team</span>
+                    <span
+                        >Eu declaro consentimento para ser chamado pelo
+                        time</span
+                    >
                 </div>
                 <span id="error_consent" class="error"></span>
             </div>
 
-            <button type="submit" class="submit">Submit</button>
+            <button type="submit" class="submit">Envia</button>
         </form>
     </body>
 
